@@ -59,6 +59,8 @@
 		3FED30251E77A37300C007AD /* MentorGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED30241E77A37300C007AD /* MentorGridViewController.swift */; };
 		3FED30271E77A57600C007AD /* (null) in Sources */ = {isa = PBXBuildFile; };
 		3FED30291E77A5CB00C007AD /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FED30281E77A5CB00C007AD /* Mentor.swift */; };
+		C23FF1681E9A94250003049E /* PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23FF1671E9A94250003049E /* PushNotification.swift */; };
+		C23FF16B1E9AE02D0003049E /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23FF16A1E9AE02D0003049E /* Secret.swift */; };
 		C28B2ED81E86601300F6DD67 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B2ED71E86601300F6DD67 /* FirebaseClient.swift */; };
 		C28B2EDA1E86665000F6DD67 /* FirebaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B2ED91E86665000F6DD67 /* FirebaseError.swift */; };
 		C2FABCEB1E9A43BB009B4A8F /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FABCEA1E9A43BB009B4A8F /* HttpClient.swift */; };
@@ -242,6 +244,8 @@
 		BC3AB841AF74D1BFD004831E /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23FF1641E9A843F0003049E /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		C23FF1651E9A847C0003049E /* SWSG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SWSG.entitlements; sourceTree = "<group>"; };
+		C23FF1671E9A94250003049E /* PushNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotification.swift; sourceTree = "<group>"; };
+		C23FF16A1E9AE02D0003049E /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		C28B2ED71E86601300F6DD67 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
 		C28B2ED91E86665000F6DD67 /* FirebaseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
 		C2FABCEA1E9A43BB009B4A8F /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
@@ -401,6 +405,7 @@
 		3F12AFC91E711CBB00B26D67 /* SWSG */ = {
 			isa = PBXGroup;
 			children = (
+				C23FF1691E9AE0190003049E /* Secret */,
 				C23FF1651E9A847C0003049E /* SWSG.entitlements */,
 				E348D5621E840CB000947B3F /* IdeasVotingPlatform */,
 				E3220C631E7D380A008AFA85 /* TeamRegistration */,
@@ -412,7 +417,7 @@
 				3FED302B1E77A5FA00C007AD /* Mentor */,
 				3FED302A1E77A5F300C007AD /* Model */,
 				3F408CC51E83BE6B00E2B787 /* Chat */,
-				C2FABCE91E9A43A9009B4A8F /* Notification */,
+				C2FABCE91E9A43A9009B4A8F /* PushNotification */,
 				C28B2ED61E865FC900F6DD67 /* Firebase */,
 				CC5F1C591E86270D006A5322 /* Information */,
 				CC168B2F1E7FBF4C00F8725A /* UI Supporting */,
@@ -529,6 +534,7 @@
 				CC6CB12E1E90FC2F00C71793 /* Idea */,
 				3F408CCC1E83C1D900E2B787 /* Chat */,
 				3F9795651E7A8FFE004BC26C /* Utilities */,
+				C23FF1661E9A940A0003049E /* PushNotification */,
 				3F9795671E7A9010004BC26C /* Users */,
 				3F9795661E7A9005004BC26C /* Mentor */,
 			);
@@ -559,6 +565,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C23FF1661E9A940A0003049E /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				C23FF1671E9A94250003049E /* PushNotification.swift */,
+			);
+			name = PushNotification;
+			sourceTree = "<group>";
+		};
+		C23FF1691E9AE0190003049E /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				C23FF16A1E9AE02D0003049E /* Secret.swift */,
+			);
+			name = Secret;
+			sourceTree = "<group>";
+		};
 		C28B2ED61E865FC900F6DD67 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -568,13 +590,13 @@
 			name = Firebase;
 			sourceTree = "<group>";
 		};
-		C2FABCE91E9A43A9009B4A8F /* Notification */ = {
+		C2FABCE91E9A43A9009B4A8F /* PushNotification */ = {
 			isa = PBXGroup;
 			children = (
 				C2FABCEA1E9A43BB009B4A8F /* HttpClient.swift */,
 				C2FABCEC1E9A772D009B4A8F /* NotiPusher.swift */,
 			);
-			name = Notification;
+			name = PushNotification;
 			sourceTree = "<group>";
 		};
 		C2FABCF31E9A77F4009B4A8F /* OneSignalNotificationServiceExtension */ = {
@@ -1062,6 +1084,7 @@
 				CC1CF8B01E7C2009002224BC /* EditProfileTableViewController.swift in Sources */,
 				CC5F1C581E862704006A5322 /* InformationViewController.swift in Sources */,
 				3FC314621E77DBAD009B21AB /* ConsultationSlotCell.swift in Sources */,
+				C23FF1681E9A94250003049E /* PushNotification.swift in Sources */,
 				CC6CB12D1E90F99B00C71793 /* OverviewViewController.swift in Sources */,
 				3F9795611E7A8DBF004BC26C /* (null) in Sources */,
 				3FC3146A1E77EB84009B21AB /* MentorViewController.swift in Sources */,
@@ -1104,6 +1127,7 @@
 				3FC6219F1E96525300661305 /* ChannelInfoViewController.swift in Sources */,
 				3FED30161E76FA0A00C007AD /* MenuViewController.swift in Sources */,
 				E3220C2B1E796C7B008AFA85 /* EventScheduleViewController.swift in Sources */,
+				C23FF16B1E9AE02D0003049E /* Secret.swift in Sources */,
 				E3220C511E7BA903008AFA85 /* CommentsInputTableViewCell.swift in Sources */,
 				E3220C6D1E7D6B40008AFA85 /* TeamCreateTableViewController.swift in Sources */,
 				E3220C411E7AE3C6008AFA85 /* EventDetailTableViewCell.swift in Sources */,

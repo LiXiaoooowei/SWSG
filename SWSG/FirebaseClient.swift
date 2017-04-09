@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 import FacebookCore
 import FacebookLogin
+import OneSignal
 
 class FirebaseClient {
     
@@ -71,6 +72,7 @@ class FirebaseClient {
     
     public func signIn(email: String, password: String, completion: @escaping SignInCallback) {
         auth?.signIn(withEmail: email, password: password, completion: {(user, err) in
+            OneSignal.syncHashedEmail(email)
             completion(self.checkError(err))
         })
     }

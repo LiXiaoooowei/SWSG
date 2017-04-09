@@ -172,5 +172,5 @@ struct Config {
     
     // Parameters for notification:
     static let fullScreenImage = "fullScreenImage"
-    static let oneSignalAppId = "7b1c79e0-7eb7-4cea-85a0-5aa12bea9e3a"
+    
 }

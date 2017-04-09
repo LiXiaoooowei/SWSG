@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
-        OneSignal.initWithLaunchOptions(launchOptions, appId: Config.oneSignalAppId)
+        OneSignal.initWithLaunchOptions(launchOptions, appId: Secret.oneSignalAppId)
         setNavigationBar()
         checkLogin()
         return true
