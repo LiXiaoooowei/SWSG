@@ -26,6 +26,9 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let client = FirebaseClient()
+        client.signIn(email: "vietthang207@gmail.com", password: "123456", completion: {(err) in
+        })
     }
 
 }
